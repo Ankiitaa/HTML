@@ -1,13 +1,14 @@
 body{
-    background-image: url(../img/background.png);
+    background-color: #fcdfbe;
+    font-family: sans-serif;
 }
 header{
     display: flex;
-    
-    background-color: lightgray;
-    
+    background-color: #ffffff;
+    height: 56px;
     flex-grow: 1;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items: center;
 } 
  header ul{
      display: flex;
@@ -18,6 +19,12 @@ header{
      margin-right: 10px;
     
    
+}
+header div{
+    color: #f89c34;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bold;
 }
 
 .hero{
@@ -36,23 +43,29 @@ header{
 }
 .hero p{
     font-size: 30px;
-    font-style: italic;
+    font-style: oblique;
+    font-family: cursive;
 }
 .section-1{
     display: flex;
     justify-content: space-between;
     margin-top: 7px;
+    font-family: cursive; 
+   
 
 }
 .section-1 div{
-    background-color: rgb(196, 237, 240);
     border-radius: 10px;
-    height: 450px;;
+    height: 500px;;
     width: 32%;
     text-align: center;
 }
 .section-1 div div{
     align-items: center;
+}
+.section-1 p{
+    font-size: 30px;
+    font-style: italic;
 }
 .section-2{
     display: flex;
@@ -61,14 +74,12 @@ header{
     height: 500px;
 }
 .section-2 div{
-    background-color: rgb(196, 237, 240);
     border-radius: 7px;
     width: 49%;
     text-align: center;
     align-items: center;
 }
 .section-2 div div{
-    background-color: rgb(181, 245, 224);
     height: fit-content;
     width: 98%;
     margin-top: 7px;
@@ -93,10 +104,11 @@ a:hover{
     font-style: italic;
 }
 footer ul{
+    background-color: #ffffff;
     display: flex;
      list-style: none;
      justify-content: space-between;
      flex-grow: 0.4;
      align-items: center;
-     margin-right: 10px;
+     height: 50px;
 }
