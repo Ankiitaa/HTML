@@ -1,6 +1,8 @@
+
 body{
     background-color: #fcdfbe;
     font-family: sans-serif;
+
 }
 header{
     display: flex;
@@ -30,12 +32,15 @@ header div{
 .hero{
     text-align: center;
     text-orientation: upright;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(../img/stack-of-open-book-in-wind-green-garden-background_ha0sz8sc_thumbnail-full01.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
-
+    height: 650px;
+    margin-top: 7px;
 }
 .hero h1{
     color: darkgoldenrod;
@@ -51,12 +56,11 @@ header div{
     justify-content: space-between;
     margin-top: 7px;
     font-family: cursive; 
-   
-
 }
+
 .section-1 div{
     border-radius: 10px;
-    height: 500px;;
+    height: fit-content;
     width: 32%;
     text-align: center;
 }
@@ -71,7 +75,7 @@ header div{
     display: flex;
     justify-content: space-between;
     margin-top: 7px;
-    height: 500px;
+    height: fit-content;
 }
 .section-2 div{
     border-radius: 7px;
@@ -103,12 +107,27 @@ a:hover{
     font-size: 30px;
     font-style: italic;
 }
-footer ul{
+footer UL{
     background-color: #ffffff;
-    display: flex;
+     display: flex;
      list-style: none;
-     justify-content: space-between;
+     justify-content: space-evenly;
      flex-grow: 0.4;
      align-items: center;
-     height: 50px;
+}
+@media only screen and (max-width: 800px)
+{
+    .section-1, .section-2{
+       flex-direction: column;
+    }
+    .section-1 div{
+        width: 100%;
+        height: fit-content;
+    }
+    .section-2 div{
+       width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
 }
