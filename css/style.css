@@ -1,6 +1,6 @@
 
 body{
-    background-color: #fcdfbe;
+    background-color: #fdedda;
     font-family: sans-serif;
 
 }
@@ -41,6 +41,8 @@ header div{
     background-repeat: no-repeat;
     height: 650px;
     margin-top: 7px;
+    align-items: center;
+    align-content: center;
 }
 .hero h1{
     color: darkgoldenrod;
@@ -48,7 +50,7 @@ header div{
 }
 .hero p{
     font-size: 30px;
-    font-style: oblique;
+    
     font-family: cursive;
 }
 .section-1{
@@ -69,13 +71,14 @@ header div{
 }
 .section-1 p{
     font-size: 30px;
-    font-style: italic;
+    
 }
 .section-2{
     display: flex;
     justify-content: space-between;
     margin-top: 7px;
     height: fit-content;
+    font-family: cursive; 
 }
 .section-2 div{
     border-radius: 7px;
@@ -101,13 +104,13 @@ a:hover{
 .section-2 div h1{
     font-size: 50px;
     color: darkgoldenrod;
-    font-style: oblique;
+    
 }
 .section-2 div p{
     font-size: 30px;
-    font-style: italic;
+    
 }
-footer UL{
+footer ul{
     background-color: #ffffff;
      display: flex;
      list-style: none;
@@ -115,19 +118,77 @@ footer UL{
      flex-grow: 0.4;
      align-items: center;
 }
-@media only screen and (max-width: 800px)
-{
-    .section-1, .section-2{
-       flex-direction: column;
+@media (min-width: 300px) and (max-width: 700px){
+.section-1{
+    flex-wrap: wrap;
+}
+.hero{
+    height: 70%;
+}
+
+.section-1 div{
+    width: 100%;
+}
+.section-2{
+   flex-wrap: wrap;
+}
+.section-2 div{
+    width: 100%;
+}
+.section-2 div div{
+   width: 100%;
+}
+
+}
+@media (min-width: 350px) and (max-width: 860px){
+    .section-1{
+        flex-wrap: wrap;
     }
+    .hero{
+        height: 70%;
+    }
+    
+    
     .section-1 div{
         width: 100%;
-        height: fit-content;
+    }
+    .section-2{
+       flex-wrap: wrap;
     }
     .section-2 div{
-       width: 100%;
-    }
-    footer{
         width: 100%;
     }
-}
+    .section-2 div div{
+       width: 100%;
+    }
+    
+    }
+    @media (min-width: 500px) and (max-width: 1290px){
+        .section-1{
+            flex-wrap: wrap;
+        }
+        .hero{
+            height: 70%;
+        }
+        
+        
+        .section-1 div{
+            width: 100%;
+        }
+        .section-2{
+           flex-wrap: wrap;
+        }
+        .section-2 div{
+            width: 100%;
+        }
+        .section-2 div div{
+           width: 100%;
+        }
+        
+        }
+    
+
+
+
+  
+  
